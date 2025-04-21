@@ -18,15 +18,13 @@ public final class TestDataUtil {
 
     public static Author CreateTestAuthorA() {
         return Author.builder().
-                id(10L).
                 name("Peter").
-                age(80).
+                age(70).
                 build();
     }
 
     public static Author CreateTestAuthorB() {
         return Author.builder().
-                id(11L).
                 name("Joel").
                 age(50).
                 build();
@@ -35,7 +33,6 @@ public final class TestDataUtil {
 
     public static Book CreateTestBook(final Author author) {
         return Book.builder().
-                id(1L).
                 title("No way out").
                 author(author).
                 build();
@@ -43,7 +40,6 @@ public final class TestDataUtil {
 
     public static Book CreateTestBook2(final Author author) {
         return Book.builder().
-                id(2L).
                 title("I'm a potato").
                 author(author).
                 build();
